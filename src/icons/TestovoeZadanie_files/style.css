@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'FuturaPT';
+    src: url(../fonts/font/FuturaPT-Demi.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'FuturaPT-medium';
+    src: url(../fonts/font/FuturaPTCond-Medium.ttf) format('opentype');
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'FuturaPT', sans-serif;
+}
+
+a {
+	color: #000000!important;
+	:focus
+}
+
+a:link, a:visited, a:active <
+color: #000000;
+>
+
+a:visited {
+   color: black;//меняем цвет посещенных ссылок
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+.main {
+    padding: 70px 0px;
+    background: url(../img/Vector_4_1.svg)  ;
+    height: 100vh;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main_text {
+    max-width: 560px;
+}
+.main_text h1 {
+    font-size: 58px;
+    line-height: 64px;
+    margin-bottom: 30px;
+	margin-top: 0px;
+}
+.main_text p {
+    font-size: 20px;
+    color: #000000;
+    line-height: 30px;
+}
+
+.main_ctn h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.main_ctn_item {
+    box-shadow: 0px 0px 15px 0px rgb(148 148 148 / 40%);
+    border-radius: 15px;
+    padding: 10px 35px 10px 14px;
+    display: flex;
+    max-width: 100%;
+    width: 456px;
+    background: #ffffff;
+    margin-bottom: 20px;
+}
+.main_img {
+    max-width: 152px;
+    margin-right: 20px;
+}
+.main_img img {
+    border-radius: 5px;
+}
+.main_item_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+	color: #000000!important;
+	margin-top: 30px;
+}
+.main_link {
+    max-width: 177px;
+	color: #000000;
+}
+.next_page {
+    display: flex;
+}
+.next_page  img {
+    max-width: 22px;
+    margin-left: 10px;
+}
+.main_item_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    font-family: 'FuturaPT-medium', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        padding: 40px 0px;
+    }
+    .main_text h1 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+    .main_ctn_item {
+        width: 100%;
+    }
+}
